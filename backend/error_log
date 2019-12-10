@@ -1,0 +1,131 @@
+[01-Dec-2018 15:43:54 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/priyanka765/public_html/principle9.com.au/backend/login_redirect.php on line 64
+[04-Dec-2018 09:57:00 UTC] PHP Notice:  Undefined variable: user in /home/priyanka765/public_html/principle9.com.au/backend/pdo_class_data.php on line 30
+[04-Dec-2018 09:57:00 UTC] PHP Notice:  Undefined variable: stmt in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 249
+[04-Dec-2018 09:57:00 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php:249
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/includes/topbar.php(49): count_notification('notification', NULL)
+#1 /home/priyanka765/public_html/principle9.com.au/backend/includes/header_end.php(19): require('/home/priyanka7...')
+#2 /home/priyanka765/public_html/principle9.com.au/backend/view_property.php(8): require('/home/priyanka7...')
+#3 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 249
+[04-Dec-2018 11:38:04 UTC] PHP Notice:  Undefined variable: user in /home/priyanka765/public_html/principle9.com.au/backend/pdo_class_data.php on line 30
+[04-Dec-2018 11:38:04 UTC] PHP Notice:  Undefined variable: stmt in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 249
+[04-Dec-2018 11:38:04 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php:249
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/includes/topbar.php(49): count_notification('notification', NULL)
+#1 /home/priyanka765/public_html/principle9.com.au/backend/includes/header_end.php(19): require('/home/priyanka7...')
+#2 /home/priyanka765/public_html/principle9.com.au/backend/add_popups.php(12): require('/home/priyanka7...')
+#3 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 249
+[05-Dec-2018 10:16:51 UTC] PHP Notice:  Undefined variable: user in /home/priyanka765/public_html/principle9.com.au/backend/pdo_class_data.php on line 30
+[05-Dec-2018 10:16:51 UTC] PHP Notice:  Undefined variable: stmt in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 249
+[05-Dec-2018 10:16:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php:249
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/includes/topbar.php(49): count_notification('notification', NULL)
+#1 /home/priyanka765/public_html/principle9.com.au/backend/includes/header_end.php(19): require('/home/priyanka7...')
+#2 /home/priyanka765/public_html/principle9.com.au/backend/view_property_category.php(4): require('/home/priyanka7...')
+#3 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 249
+[05-Dec-2018 11:14:54 UTC] PHP Notice:  Undefined variable: user in /home/priyanka765/public_html/principle9.com.au/backend/pdo_class_data.php on line 30
+[05-Dec-2018 11:14:54 UTC] PHP Notice:  Undefined variable: stmt in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 249
+[05-Dec-2018 11:14:54 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php:249
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/includes/topbar.php(49): count_notification('notification', NULL)
+#1 /home/priyanka765/public_html/principle9.com.au/backend/includes/header_end.php(19): require('/home/priyanka7...')
+#2 /home/priyanka765/public_html/principle9.com.au/backend/update_property.php(52): require('/home/priyanka7...')
+#3 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 249
+[06-Dec-2018 08:05:41 UTC] PHP Notice:  Undefined variable: user in /home/priyanka765/public_html/principle9.com.au/backend/pdo_class_data.php on line 30
+[06-Dec-2018 08:05:41 UTC] PHP Notice:  Undefined variable: stmt in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 249
+[06-Dec-2018 08:05:41 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php:249
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/includes/topbar.php(49): count_notification('notification', NULL)
+#1 /home/priyanka765/public_html/principle9.com.au/backend/includes/header_end.php(19): require('/home/priyanka7...')
+#2 /home/priyanka765/public_html/principle9.com.au/backend/view_property.php(8): require('/home/priyanka7...')
+#3 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 249
+[06-Dec-2018 08:37:26 UTC] PHP Notice:  Undefined index: floor_plan in /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php on line 99
+[06-Dec-2018 08:37:26 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'video_link' in 'field list' in /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php:103
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php(103): PDO->exec('INSERT INTO `pr...')
+#1 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php on line 103
+[06-Dec-2018 08:38:37 UTC] PHP Notice:  Undefined index: floor_plan in /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php on line 99
+[06-Dec-2018 08:38:37 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'video_link' in 'field list' in /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php:103
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php(103): PDO->exec('INSERT INTO `pr...')
+#1 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php on line 103
+[06-Dec-2018 08:47:09 UTC] PHP Notice:  Undefined index: floor_plan in /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php on line 99
+[06-Dec-2018 08:47:09 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'video_link' in 'field list' in /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php:103
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php(103): PDO->exec('INSERT INTO `pr...')
+#1 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php on line 103
+[06-Dec-2018 10:05:14 UTC] PHP Notice:  Undefined variable: user in /home/priyanka765/public_html/principle9.com.au/backend/pdo_class_data.php on line 30
+[06-Dec-2018 10:05:18 UTC] PHP Notice:  Undefined index: floor_plan in /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php on line 99
+[06-Dec-2018 10:05:18 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'video_link' in 'field list' in /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php:103
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php(103): PDO->exec('INSERT INTO `pr...')
+#1 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/property_handle.php on line 103
+[07-Dec-2018 08:38:17 UTC] PHP Notice:  Undefined variable: stmt in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:38:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php:263
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/dashboard.php(32): count_tem_in_table('product_categor...')
+#1 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:39:38 UTC] PHP Notice:  Undefined variable: stmt in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:39:38 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php:263
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/dashboard.php(32): count_tem_in_table('product_categor...')
+#1 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:39:43 UTC] PHP Notice:  Undefined variable: stmt in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:39:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php:263
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/dashboard.php(32): count_tem_in_table('product_categor...')
+#1 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:39:45 UTC] PHP Notice:  Undefined variable: stmt in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:39:45 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php:263
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/dashboard.php(32): count_tem_in_table('product_categor...')
+#1 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:39:45 UTC] PHP Notice:  Undefined variable: stmt in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:39:45 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php:263
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/dashboard.php(32): count_tem_in_table('product_categor...')
+#1 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:39:45 UTC] PHP Notice:  Undefined variable: stmt in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:39:45 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php:263
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/dashboard.php(32): count_tem_in_table('product_categor...')
+#1 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:40:19 UTC] PHP Notice:  Undefined variable: stmt in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:40:19 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php:263
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/dashboard.php(53): count_tem_in_table('products')
+#1 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:40:39 UTC] PHP Notice:  Undefined variable: stmt in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:40:39 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php:263
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/dashboard.php(53): count_tem_in_table('products')
+#1 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:41:14 UTC] PHP Notice:  Undefined variable: stmt in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:41:14 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php:263
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/dashboard.php(99): count_tem_in_table('your_story')
+#1 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:41:20 UTC] PHP Notice:  Undefined variable: stmt in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
+[07-Dec-2018 08:41:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php:263
+Stack trace:
+#0 /home/priyanka765/public_html/principle9.com.au/backend/dashboard.php(99): count_tem_in_table('your_story')
+#1 {main}
+  thrown in /home/priyanka765/public_html/principle9.com.au/backend/administrator/function.php on line 263
