@@ -4,9 +4,9 @@
           <div class="row justify-content-center">
             <div class="col-lg-7">
               <div class="title-row">
-                <h2 class="section-title text-center">
-                  Do you want to <span class="highlight" style="color: #8000de">Do You need to generate</span> More authenticity to your brand?
-                </h2>
+                <!-- <h2 class="section-title text-center">
+                  Do you want to <span class="highlight" style="color: #8000de">Do You need to generate</span> More authenticity to your Document?
+                </h2> -->
               </div>              
             </div>            
           </div>          

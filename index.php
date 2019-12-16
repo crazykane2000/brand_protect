@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Brand Protection : Protect Your Brand Name Kegally the Blockchain Way</title>
+  <title>File Protect : Protect Your File Name Legally the Blockchain Way</title>
 
   <meta charset="utf-8">
   <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->

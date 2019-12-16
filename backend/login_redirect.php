@@ -31,7 +31,9 @@
 			exit();
 		}
 		try {
+			 //echo 'SELECT * FROM `users` WHERE `email` = "'.$email.'" AND `password`="'.$pass.'" AND `verified`="Yes"';
 		    $stmt = $pdo->prepare('SELECT * FROM `users` WHERE `email` = "'.$email.'" AND `password`="'.$pass.'" AND `verified`="Yes"');
+		   
 		   } catch(PDOException $ex) {
 		    echo "An Error occured!"; 
 		    print_r($ex->getMessage());
@@ -40,20 +42,14 @@
 		$stmt->execute();
 		$user = $stmt->fetch();
 		$row_count = $stmt->rowCount();	
+		//print_r($row_count);
 
 		if($row_count>0){	
-			if($user['g_auth_key']==""){
-				$_SESSION['user'] = $email;
-				$_SESSION['role'] = "user";
-			 	$_SESSION['loged_primitives'] = md5($pass);
-				header('Location:dashboard.php?choice=success&value=Login Successful, Welcome to User Panel');
-				exit();
-			}
-			else{
-				$_SESSION['secrets'] = $user['g_auth_key'];
-				 header('Location:login_otp.php?choice=success&value=Enter OTP&passcode='.base64_encode($_REQUEST['user']));
-		     	exit();
-			}
+			$_SESSION['user'] = $email;
+			$_SESSION['role'] = "user";
+		 	$_SESSION['loged_primitives'] = md5($pass);
+			header('Location:dashboard.php?choice=success&value=Login Successful, Welcome to User Panel');
+			exit();	
 		}else{
 			header('Location:index.php?choice=error&value=Please Relogin, Previous Supplied Credentials Were Wrong or Account was Not Verified');
 			exit();

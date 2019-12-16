@@ -167,6 +167,217 @@ function get_data_id($table){
     }
 
 
+    function isCompanyExist($id){
+      $data = "{\n  \"_businessId\": \"$id\"\n}";
+      $length = strlen($data);
+      $curl = curl_init();
+      curl_setopt_array($curl, array(
+        CURLOPT_PORT => "3007",
+        CURLOPT_URL => "http://13.233.7.230:3007/api/dataManager/getBusinessDetails",
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_ENCODING => "",
+        CURLOPT_MAXREDIRS => 10,
+        CURLOPT_TIMEOUT => 30,
+        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+        CURLOPT_CUSTOMREQUEST => "POST",
+        CURLOPT_POSTFIELDS => "$data",
+        CURLOPT_HTTPHEADER => array(
+          "Accept: */*",
+          "Accept-Encoding: gzip, deflate",
+          "Cache-Control: no-cache",
+          "Connection: keep-alive",
+          "Content-Length: $length",
+          "Content-Type: application/json",
+          "Cookie: connect.sid=s%3AryIDs4pvWD2mZI0rrg0JXt9yf4dNqbjD.mHZ9PkDbmSeZKXA9dcd4J7d0H8NwC0i4Ps%2FZFQJp4PI",
+          "Host: 13.233.7.230:3007",
+          "Postman-Token: 135d6c72-cf5c-4225-a556-ae6c582ed2c5,731c76eb-2532-4177-939c-6f09acad26bf",
+          "User-Agent: PostmanRuntime/7.19.0",
+          "cache-control: no-cache"
+        ),
+      ));
+
+      $response = curl_exec($curl);
+      $err = curl_error($curl);
+
+      curl_close($curl);
+      print_r($response);
+
+      if ($err) {
+        echo "cURL Error #:" . $err;
+      } else {
+        $data = json_decode($response);
+        print_r($data);
+      }
+    }
+
+    function fetch_company(){
+      $curl = curl_init();
+
+      curl_setopt_array($curl, array(
+        CURLOPT_PORT => "3007",
+        CURLOPT_URL => "http://13.233.7.230:3007/api/dataManager/getBusinessLogs",
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_ENCODING => "",
+        CURLOPT_MAXREDIRS => 10,
+        CURLOPT_TIMEOUT => 30,
+        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+        CURLOPT_CUSTOMREQUEST => "GET",
+        CURLOPT_HTTPHEADER => array(
+          "Accept: */*",
+          "Accept-Encoding: gzip, deflate",
+          "Cache-Control: no-cache",
+          "Connection: keep-alive",
+          "Content-Type: application/json",
+          "Cookie: connect.sid=s%3AryIDs4pvWD2mZI0rrg0JXt9yf4dNqbjD.mHZ9PkDbmSeZKXA9dcd4J7d0H8NwC0i4Ps%2FZFQJp4PI",
+          "Host: 13.233.7.230:3007",
+          "Postman-Token: a586fdbc-472c-4875-b55d-1564db40455f,1147543e-a071-4c2e-bb7d-5dfc703bb2bc",
+          "User-Agent: PostmanRuntime/7.19.0",
+          "cache-control: no-cache"
+        ),
+      ));
+
+      $response = curl_exec($curl);
+      $err = curl_error($curl);
+
+      curl_close($curl);
+
+      if ($err) {
+        echo "cURL Error #:" . $err;
+      } else {
+        $response = json_decode($response,true);
+        return $response;
+      }
+    }
+
+
+    function fetch_department(){
+      $curl = curl_init();
+
+      curl_setopt_array($curl, array(
+        CURLOPT_PORT => "3007",
+        CURLOPT_URL => "http://13.233.7.230:3007/api/dataManager/getBrandLogs",
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_ENCODING => "",
+        CURLOPT_MAXREDIRS => 10,
+        CURLOPT_TIMEOUT => 30,
+        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+        CURLOPT_CUSTOMREQUEST => "GET",
+        CURLOPT_HTTPHEADER => array(
+          "Accept: */*",
+          "Accept-Encoding: gzip, deflate",
+          "Cache-Control: no-cache",
+          "Connection: keep-alive",
+          "Content-Type: application/json",
+          "Cookie: connect.sid=s%3AryIDs4pvWD2mZI0rrg0JXt9yf4dNqbjD.mHZ9PkDbmSeZKXA9dcd4J7d0H8NwC0i4Ps%2FZFQJp4PI",
+          "Host: 13.233.7.230:3007",
+          "Postman-Token: de108051-3689-4188-8258-a803442baf4b,37e4a4b6-eef7-447c-af43-d04081021b0c",
+          "User-Agent: PostmanRuntime/7.19.0",
+          "cache-control: no-cache"
+        ),
+      ));
+
+      $response = curl_exec($curl);
+      $err = curl_error($curl);
+
+      curl_close($curl);
+
+      if ($err) {
+        echo "cURL Error #:" . $err;
+      } else {
+        $data = json_decode($response,true);
+       return $data;
+      }
+    }
+
+
+    function get_department_details($brand_id){
+      $curl = curl_init();
+      $data = "{\n  \"_brandSerialId\": \"".$brand_id."\"\n}";
+      $length=strlen($data);
+
+      curl_setopt_array($curl, array(
+        CURLOPT_PORT => "3007",
+        CURLOPT_URL => "http://13.233.7.230:3007/api/dataManager/getBrandDetails",
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_ENCODING => "",
+        CURLOPT_MAXREDIRS => 10,
+        CURLOPT_TIMEOUT => 30,
+        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+        CURLOPT_CUSTOMREQUEST => "POST",
+        CURLOPT_POSTFIELDS => $data,
+        CURLOPT_HTTPHEADER => array(
+          "Accept: */*",
+          "Accept-Encoding: gzip, deflate",
+          "Cache-Control: no-cache",
+          "Connection: keep-alive",
+          "Content-Length: $length",
+          "Content-Type: application/json",
+          "Cookie: connect.sid=s%3AryIDs4pvWD2mZI0rrg0JXt9yf4dNqbjD.mHZ9PkDbmSeZKXA9dcd4J7d0H8NwC0i4Ps%2FZFQJp4PI",
+          "Host: 13.233.7.230:3007",
+          "Postman-Token: 87e00dd3-e15d-4e44-b8db-388cfc47a004,4cdd5bef-5c8a-4c20-a35c-4fd56218222b",
+          "User-Agent: PostmanRuntime/7.19.0",
+          "cache-control: no-cache"
+        ),
+      ));
+
+      $response = curl_exec($curl);
+      $err = curl_error($curl);
+
+      curl_close($curl);
+
+      if ($err) {
+        return "cURL Error #:" . $err;
+      } else {
+        $response = json_decode($response,true);
+        return $response;
+      }
+    }
+
+
+    function get_company_details($company_id){
+      $curl = curl_init();
+      $data = "{\n  \"_businessId\": \"".$company_id."\"\n}";
+      $length=strlen($data);
+
+      curl_setopt_array($curl, array(
+        CURLOPT_PORT => "3007",
+        CURLOPT_URL => "http://13.233.7.230:3007/api/dataManager/getBusinessDetails",
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_ENCODING => "",
+        CURLOPT_MAXREDIRS => 10,
+        CURLOPT_TIMEOUT => 30,
+        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+        CURLOPT_CUSTOMREQUEST => "POST",
+        CURLOPT_POSTFIELDS => $data,
+        CURLOPT_HTTPHEADER => array(
+          "Accept: */*",
+          "Accept-Encoding: gzip, deflate",
+          "Cache-Control: no-cache",
+          "Connection: keep-alive",
+          "Content-Length: $length",
+          "Content-Type: application/json",
+          "Cookie: connect.sid=s%3AryIDs4pvWD2mZI0rrg0JXt9yf4dNqbjD.mHZ9PkDbmSeZKXA9dcd4J7d0H8NwC0i4Ps%2FZFQJp4PI",
+          "Host: 13.233.7.230:3007",
+          "Postman-Token: 1660f1db-e0ab-4256-91ce-517873503395,4a11c92c-e77d-4099-aae5-c4b69b1b0403",
+          "User-Agent: PostmanRuntime/7.19.0",
+          "cache-control: no-cache"
+        ),
+      ));
+
+      $response = curl_exec($curl);
+      $err = curl_error($curl);
+
+      curl_close($curl);
+
+
+      if ($err) {
+        return "cURL Error #:" . $err;
+      } else {
+        $response = json_decode($response,true);
+        return $response;
+      }
+    }
+
 
 
  function get_data_id_data_alll($table, $limits){

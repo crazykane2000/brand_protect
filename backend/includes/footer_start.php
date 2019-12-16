@@ -48,7 +48,7 @@
 <!-- /Right-bar -->
 
 <footer class="footer text-right">
-    <?php echo date("Y"); ?> &copy; Brand Protect
+    <?php echo date("Y"); ?> &copy; File Protect
 </footer>
 
 

@@ -14,9 +14,9 @@
     <div class="container">
       <div class="row justify-content-end">
         <div class="col-lg-6">
-          <h2 class="promo-section__title promo-section__title--boxed">Fear of loosing out your brand name?We've got your back, just stay calm and Protect it with BrandProtect</h2>
-          <p class="promo-section__text lead">As you may already know, there are an infinite number of people who want to capture reputation of your brand. But we are here to protect your brand </p>
-          <a href="#" class="btn btn--lg btn--color btn--icon">
+          <h2 class="promo-section__title promo-section__title--boxed">Fear of loosing out your Document ? We've got your back, just stay calm and Protect it with FileProtect</h2>
+          <p class="promo-section__text lead">As you may already know, there are an infinite number of people who want to capture reputation of your Company. But we are here to protect your File </p>
+          <a href="register.php" class="btn btn--lg btn--color btn--icon">
             <span>Get Started</span>
             <i class="ui-arrow-right"></i>
           </a>

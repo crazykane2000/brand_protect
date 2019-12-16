@@ -17,31 +17,34 @@
                 </div>
             </div>
 
-            <div class="col-sm-12">
-              <div class="card-box">
-                
-              </div>
-            </div>
            
+           <?php //see_status($_REQUEST); ?>
             <?php  see_status2($_REQUEST); ?>            
               <div class="col-sm-12">
                     
                       <?php
 
                       $curl = curl_init();
+
                       curl_setopt_array($curl, array(
-                        CURLOPT_PORT => "3001",
-                        CURLOPT_URL => "http://137.135.96.213:3001/api/dataManager/getBusinessLogs",
+                        CURLOPT_PORT => "3007",
+                        CURLOPT_URL => "http://13.233.7.230:3007/api/dataManager/getBusinessLogs",
                         CURLOPT_RETURNTRANSFER => true,
                         CURLOPT_ENCODING => "",
                         CURLOPT_MAXREDIRS => 10,
                         CURLOPT_TIMEOUT => 30,
                         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
                         CURLOPT_CUSTOMREQUEST => "GET",
-                        CURLOPT_POSTFIELDS => "",
                         CURLOPT_HTTPHEADER => array(
+                          "Accept: */*",
+                          "Accept-Encoding: gzip, deflate",
+                          "Cache-Control: no-cache",
+                          "Connection: keep-alive",
                           "Content-Type: application/json",
-                          "Postman-Token: 89c902c4-e9c8-42dc-89eb-8e5a85e15c8b",
+                          "Cookie: connect.sid=s%3AryIDs4pvWD2mZI0rrg0JXt9yf4dNqbjD.mHZ9PkDbmSeZKXA9dcd4J7d0H8NwC0i4Ps%2FZFQJp4PI",
+                          "Host: 13.233.7.230:3007",
+                          "Postman-Token: 2f5dce28-7607-43f5-928c-70d6cc81a433,ce682ec5-ec9f-4106-8d0a-e65a67b103d9",
+                          "User-Agent: PostmanRuntime/7.19.0",
                           "cache-control: no-cache"
                         ),
                       ));
@@ -52,11 +55,14 @@
                       curl_close($curl);
 
                      
-
+                      //$response = rsort($response);
                       if ($err) {
                           echo "cURL Error #:" . $err;
                         } else {
                              $data = (json_decode($response, TRUE));
+                             rsort($data);
+                             //print_r($data);
+                             //$data=rsort($data);
                              foreach ($data as $key => $value) {
 
                               //echo $value['removed'];

@@ -27,8 +27,8 @@
           <div class="row">
             <div class="col-lg-5 offset-lg-1">
               <div class="hero__text-holder">
-                <h1 class="hero__title hero__title--boxed">Take Back Control of Your Brand</h1>
-                <h2 class="hero__subtitle">Fear of loosing out your brand name?We've got your back, just stay calm and Protect it with BrandProtect</h2>
+                <h1 class="hero__title hero__title--boxed">Take Back Control of Your Document</h1>
+                <h2 class="hero__subtitle">Fear of losing out your Document? We've got your back, just stay calm and Protect it with FileProtect</h2>
               </div>              
             </div>
           </div>
@@ -37,18 +37,18 @@
             <div class="col-lg-10">
               <!-- Optin Form -->
               <div class="optin">
-                <h3 class="optin__title">Find Your registered Brand pr search digital brands of your choice</h3>
-                <fsorm class="optin__form">
+                <h3 class="optin__title">Find Your registered Document via Document Id</h3>
+                <form class="optin__form" action="search_handle.php" method="POST">
                   <div class="optin__form-group form-group">                    
-                    <input type="text" class="form-input optin__input" id="optin-name" required>
+                    <input type="text" name="search_id" class="form-input optin__input" id="optin-name" required>
                     <label for="optin-name" class="optin__label">Enter your Digital Id</label>
                     <span class="input-underline"></span>
                   </div>
-                  <div class="optin__form-group form-group">
+                  <!-- <div class="optin__form-group form-group">
                     <input type="text" class="form-input optin__input" id="optin-email" required>
-                    <label for="optin-email" class="optin__label">Search Via Brand Name</label>
+                    <label for="optin-email" class="optin__label">Search Via Document Name</label>
                     <span class="input-underline"></span>
-                  </div>
+                  </div> -->
                   
                   <a href="details.php"> <button class="optin__btn btn btn--md btn--color btn--button" style="background-color: #9192e7">Search Now</button>         </a>
                 </form>

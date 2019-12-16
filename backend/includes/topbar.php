@@ -1,7 +1,7 @@
 <!-- Top Bar Start -->
 <div class="topbar">
     <div class="topbar-left" style="border-bottom: solid 1px #ddd">
-        <a href="dashboard.php" class="logo" id="logo-tour"><img src="0o.png" style="width: 50px;"> <span>Protect</span></a>
+        <a href="dashboard.php" class="logo" id="logo-tour"><img src="0o.png" style="width: 50px;"> <span>File</span></a>
     </div>
 
 
@@ -20,8 +20,7 @@
                 <a class="nav-link dropdown-toggle arrow-none waves-light waves-effect" data-toggle="dropdown"
                    href="#" role="button"
                    aria-haspopup="false" aria-expanded="false">
-                    <i class="zmdi zmdi-texture noti-icon"></i>
-                    <span class="noti-icon-badge"></span>
+                    <span style="font-size: 20px;">Ballance : <?php echo $pdo_auth['balance']; ?></span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-lg" aria-labelledby="Preview" style="word-wrap:break-word; ">
                     <!-- item-->

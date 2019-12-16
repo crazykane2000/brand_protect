@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <?php include 'connection.php'; include 'random_function.php';  include 'pdo_class_data.php'; ?>
-    <title>Brand Protection  : <?php include 'title.php'; ?></title>
+    <title>File Protect  : <?php include 'title.php'; ?></title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
@@ -75,14 +75,14 @@
            <div style="padding:10px"></div> 
           <div style="padding:0px"></div>
            <?php see_status2($_REQUEST); ?>
-          <h1 class="century" style="color: #fff;margin-bottom: 4px;font-size: 30px;text-shadow: 0px 3px 10px rgba(2,2,2,.2);line-height: 1.3em;"> Join the next generation <br/> <b><span style="color: #fff;font-size: 45px;">Brand Protection</span></b> </h1>
+          <h1 class="century" style="color: #fff;margin-bottom: 4px;font-size: 30px;text-shadow: 0px 3px 10px rgba(2,2,2,.2);line-height: 1.3em;"> Join the next generation <br/> <b><span style="color: #fff;font-size: 45px;">File Protect</span></b> </h1>
           
          
         
           <div style="padding:20px"></div>
 
           <center>
-            <button class="btn btn-info poik hvr-bounce-to-right" data-toggle="modal" data-target="#myModal2" style="background-color: #7a00ff;border:0px;font-weight: bold;">LOGIN</button>            
+            <button class="btn btn-info poik hvr-bounce-to-right" data-toggle="modal" data-target="#myModal2" style="background-color: orangered;border:0px;font-weight: bold;">LOGIN</button>            
           </center>
         </div>
 
@@ -97,7 +97,7 @@
           <div class="modal-content">
             <form method="POST" action="login_redirect.php"  novalidate onsubmit="return validate();">
              <div style="padding: 40px;background-color: #fff">
-                  <a href="index.php"><img src="../img/lopk.png" style="width: 150px"></a>      
+                  <a href="index.php"><img src="http://catpops.info/ghost.png" style="width: 180px"></a>      
                 <div style="padding: 5px;"></div>
                 <div style="padding: 10px;"></div>
 
@@ -123,14 +123,14 @@
 
                <input type="hidden" name="tx_address" >
               <!-- <div style="padding: 10px;"></div>-->
-               <div class="g-recaptcha" data-sitekey="6LfVNn4UAAAAAEqaGdnmnjLe5pCrPwPqqmAV1oCf"></div>
+               <div class="g-recaptcha" data-sitekey="6LejyscUAAAAAKGsZfvmlaD0bXs5xpFn4xYiKOz_"></div>
                 <div style="padding: 16px;"></div>
                
                
 
                 <div class="row">
                   <div class="col-sm-12">
-                   <button class="inputss " name="login" style="width: 100%;background-color: #8c16cd">LogIn</button>
+                   <button class="inputss " name="login" style="width: 100%;background-color: orangered">LogIn</button>
                   </div>
                 </div>
                 <br/>

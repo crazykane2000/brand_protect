@@ -8,7 +8,7 @@
                 <div class="widget widget-about-us">
                   <!-- Logo -->
                   <a href="index.php" class="logo-container flex-child">
-                    <img class="logo" src="img/lopk.png" srcset="img/lopk.png 1x, img/lopk.png 2x" alt="Brand Protection : Protect Your Brand Name Kegally the Blockchain Way">
+                    <img class="logo" src="backend/0o.png" srcset="http://catpops.info/ghost.png" style="width:170px" alt="Brand Protection : Protect Your Brand Name Kegally the Blockchain Way">
                   </a>
                   
                   
